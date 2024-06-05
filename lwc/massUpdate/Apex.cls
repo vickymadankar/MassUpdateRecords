@@ -34,7 +34,7 @@ public with sharing class EposMassUpdateController {
                     }
                 }
             }
-            update eposRecords;
+            Database.update(eposRecords.false);
             return 'Success';
         } catch (Exception e) {
             return 'Error: ' + e.getMessage();
